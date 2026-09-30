@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boneca Velvet | Curso de Costura Criativa — Tissu Studio</title>
+  <meta name="description" content="Aprenda a construir a Boneca Velvet em um projeto autoral do Tissu Studio. Aulas em alta resolução, duas perspectivas de gravação e acesso vitalício.">
+  <meta name="theme-color" content="#B9363F">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Boneca Velvet — Tissu Studio">
+  <meta property="og:description" content="Um projeto autoral de costura criativa. 8 aulas, alta resolução, 2 perspectivas e acesso vitalício.">
+  <meta property="og:image" content="../../assets/img/atelier.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/png" href="../../assets/logo/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="../../assets/img/hero.jpg">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <!-- Ícones e grafismos do atelier -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-button" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="11" opacity=".5"/>
+        <circle cx="20.5" cy="20.5" r="1.8" fill="currentColor"/><circle cx="27.5" cy="20.5" r="1.8" fill="currentColor"/>
+        <circle cx="20.5" cy="27.5" r="1.8" fill="currentColor"/><circle cx="27.5" cy="27.5" r="1.8" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-spool" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+        <rect x="12" y="6" width="24" height="5" rx="2"/><rect x="12" y="37" width="24" height="5" rx="2"/>
+        <path d="M17 11v26M31 11v26"/><path d="M17 15h14M17 19h14M17 23h14M17 27h14M17 31h14M17 35h14" opacity=".55"/>
+      </symbol>
+      <symbol id="i-flower" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="24" cy="15" r="6"/><circle cx="32.6" cy="21.2" r="6"/><circle cx="29.3" cy="31.3" r="6"/>
+        <circle cx="18.7" cy="31.3" r="6"/><circle cx="15.4" cy="21.2" r="6"/><circle cx="24" cy="24" r="3.4" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-scissors" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="14" cy="37" r="6"/><circle cx="34" cy="37" r="6"/><path d="M18.4 32.6 37 8M29.6 32.6 11 8"/>
+      </symbol>
+      <symbol id="i-needle" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M9 39 36 12"/><ellipse cx="36.5" cy="11.5" rx="1.3" ry="3.2" transform="rotate(45 36.5 11.5)"/>
+        <path d="M37 11c7 6-3 14-9 20s-13 9-18 5" opacity=".55"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 12h15M13 6l6 6-6 6"/>
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="topo">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="../../index.html" aria-label="Tissu Studio — página inicial">
+        <img src="../../assets/logo/logo-horizontal.png" alt="Tissu Studio by Valeska Fraga" width="720" height="218">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#curso">O curso</a></li>
+          <li><a href="#programa">Programa</a></li>
+          <li><a href="#professora">Professora</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+        <a class="btn btn--red site-nav__cta" href="#" data-link="checkout">Começar o curso</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="btn btn--red btn--sm site-header__cta" href="#" data-link="checkout">Aprender agora</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__bars" aria-hidden="true"></span>
+          <span class="sr-only">Abrir menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__bg" src="../../assets/img/hero.jpg" width="1600" height="895"
+           alt="Valeska Fraga sorrindo em seu atelier ao lado da Boneca Velvet, de saia de veludo vermelho, blusa de renda e cabelos de lã coloridos.">
+
+      <div class="hero__inner container">
+      <div class="hero__text">
+        <p class="eyebrow eyebrow--light">Tissu Studio apresenta</p>
+        <h1 class="hero__title" id="hero-title">Boneca <em>Velvet</em></h1>
+        <p class="hero__lead">Um projeto autoral<br> de costura criativa.</p>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--cream" href="#" data-link="checkout">
+          Começar o curso <svg class="btn__icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+        <ul class="facts" aria-label="Sobre o curso">
+          <li>8 aulas</li>
+          <li>Alta resolução</li>
+          <li>2 perspectivas</li>
+          <li>Acesso vitalício</li>
+        </ul>
+        <p class="hero__coupon">
+          Lançamento: <strong>20% off</strong> com o cupom
+          <button class="coupon coupon--sm" type="button" data-copy="VELVET1" aria-label="Copiar cupom VELVET1">
+            <span class="coupon__code">VELVET1</span><span class="coupon__action">Copiar</span>
+          </button>
+        </p>
+      </div>
+      </div>
+    </section>
+
+    <!-- ABERTURA -->
+    <section class="intro section" id="curso" aria-labelledby="intro-title">
+      <div class="container intro__grid">
+        <div class="intro__text reveal">
+          <p class="eyebrow">Um projeto autoral do Tissu Studio</p>
+          <h2 class="h2" id="intro-title">Um projeto para construir com as próprias mãos</h2>
+          <p class="lead">A Boneca Velvet nasce do encontro entre técnica, matéria e imaginação.</p>
+          <p>Um projeto autoral do Tissu Studio que reúne tecido, veludo, renda, fios, botões, pintura e pequenos detalhes em uma única construção.</p>
+        </div>
+        <div class="intro__media reveal">
+          <span class="intro__swatch gingham" aria-hidden="true"></span>
+          <div class="intro__video take take--clean">
+            <video muted loop playsinline preload="none" data-src="../../assets/video/home-02.mp4" aria-label="Bastidores da construção da Boneca Velvet"></video>
+            <button class="take__toggle" type="button" aria-label="Pausar vídeo">
+              <svg class="take__icon take__icon--pause" aria-hidden="true"><use href="#i-pause"/></svg>
+              <svg class="take__icon take__icon--play" aria-hidden="true"><use href="#i-play"/></svg>
+            </button>
+            <span class="tag">Direto do atelier</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMA -->
+    <section class="program section section--cream textured" id="programa" aria-labelledby="program-title">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">Programa</p>
+            <h2 class="h2" id="program-title">O projeto, etapa por etapa</h2>
+          </div>
+          <p class="section-head__aside">8 aulas · mais de 2 horas de conteúdo · gravadas em alta resolução, com duas perspectivas.</p>
+        </header>
+
+        <div class="lessons">
+          <article class="lesson reveal">
+            <div class="lesson__thumb"><img src="../../assets/img/atelier.jpg" width="1265" height="745" loading="lazy" alt="" style="object-position: 40% 40%"></div>
+            <p class="lesson__num">Aula 01</p>
+            <h3 class="lesson__title">Molde da Velvet</h3>
+            <p class="lesson__desc">O ponto de partida para compreender a estrutura da Boneca Velvet.</p>
+            <div class="lesson__meta"><a class="lesson__cta" href="#" data-link="checkout">Começar o curso <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </article>
+          <article class="lesson reveal">
+            <div class="lesson__thumb"><img src="../../assets/img/roupa.jpg" width="1177" height="670" loading="lazy" alt=""></div>
+            <p class="lesson__num">Aula 02</p>
+            <h3 class="lesson__title">Materiais — Boneca Velvet</h3>
+            <p class="lesson__desc">Conheça os materiais utilizados na construção e prepare tudo para iniciar o projeto.</p>
+            <div class="lesson__meta"><span class="lesson__time"><svg aria-hidden="true"><use href="#i-clock"/></svg>09:55</span><a class="lesson__cta" href="#" data-link="checkout">Começar o curso <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </article>
+          <article class="lesson reveal">
+            <div class="lesson__thumb"><img src="../../assets/img/costura.jpg" width="1157" height="613" loading="lazy" alt=""></div>
+            <p class="lesson__num">Aula 03</p>
+            <h3 class="lesson__title">Costuras Velvet</h3>
+            <p class="lesson__desc">A construção começa a ganhar forma por meio das costuras e da montagem da estrutura.</p>
+            <div class="lesson__meta"><span class="lesson__time"><svg aria-hidden="true"><use href="#i-clock"/></svg>17:27</span><a class="lesson__cta" href="#" data-link="checkout">Começar o curso <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </article>
+          <article class="lesson reveal">
+            <div class="lesson__thumb"><img src="../../assets/img/corte.jpg" width="763" height="446" loading="lazy" alt=""></div>
+            <p class="lesson__num">Aula 04</p>
+            <h3 class="lesson__title">Molde e corte — Boneca Velvet</h3>
+            <p class="lesson__desc">O planejamento se transforma em matéria e os tecidos começam a assumir as formas do projeto.</p>
+            <div class="lesson__meta"><span class="lesson__time"><svg aria-hidden="true"><use href="#i-clock"/></svg>07:24</span><a class="lesson__cta" href="#" data-link="checkout">Começar o curso <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </article>
+          <article class="lesson reveal">
+            <div class="lesson__thumb"><img src="../../assets/img/montagem.jpg" width="1153" height="607" loading="lazy" alt=""></div>
+            <p class="lesson__num">Aula 05</p>
+            <h3 class="lesson__title">Enchimento — Boneca Velvet</h3>
+            <p class="lesson__desc">Construção do volume e da estrutura da Boneca Velvet.</p>
+            <div class="lesson__meta"><span class="lesson__time"><svg aria-hidden="true"><use href="#i-clock"/></svg>26:55</span><a class="lesson__cta" href="#" data-link="checkout">Começar o curso <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </article>
+          <article class="lesson reveal">
+            <div class="lesson__thumb"><img src="../../assets/img/pintura-rosto.jpg" width="602" height="340" loading="lazy" alt=""></div>
+            <p class="lesson__num">Aula 06</p>
+            <h3 class="lesson__title">Pintura rosto</h3>
+            <p class="lesson__desc">O momento em que a personagem ganha expressão.</p>
+            <div class="lesson__meta"><span class="lesson__time"><svg aria-hidden="true"><use href="#i-clock"/></svg>20:27</span><a class="lesson__cta" href="#" data-link="checkout">Começar o curso <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </article>
+          <article class="lesson reveal">
+            <div class="lesson__thumb"><img src="../../assets/img/cabelo.jpg" width="1600" height="900" loading="lazy" alt=""></div>
+            <p class="lesson__num">Aula 07</p>
+            <h3 class="lesson__title">Cabelo Velvet</h3>
+            <p class="lesson__desc">Construção dos cabelos e dos elementos que definem a personalidade da boneca.</p>
+            <div class="lesson__meta"><span class="lesson__time"><svg aria-hidden="true"><use href="#i-clock"/></svg>30:37</span><a class="lesson__cta" href="#" data-link="checkout">Começar o curso <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </article>
+          <article class="lesson reveal">
+            <div class="lesson__thumb"><img src="../../assets/img/detalhes-finais.jpg" width="1189" height="664" loading="lazy" alt=""></div>
+            <p class="lesson__num">Aula 08</p>
+            <h3 class="lesson__title">Detalhes finais</h3>
+            <p class="lesson__desc">Os últimos elementos que completam e dão unidade à Boneca Velvet.</p>
+            <div class="lesson__meta"><span class="lesson__time"><svg aria-hidden="true"><use href="#i-clock"/></svg>25:00</span><a class="lesson__cta" href="#" data-link="checkout">Começar o curso <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO VISUAL -->
+    <section class="process section" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">Nos bastidores das aulas</p>
+            <h2 class="h2" id="process-title">Mãos, matéria<br> e processo</h2>
+          </div>
+          <p class="section-head__aside">Fotografias reais das gravações. Cada etapa da Boneca Velvet acompanhada de perto, do tecido ao último botão.</p>
+        </header>
+
+        <div class="collage">
+          <figure class="collage__item collage__item--a reveal">
+            <img src="../../assets/img/cabelo.jpg" width="1600" height="900" loading="lazy"
+                 alt="Mão ajustando os cabelos de lã da Boneca Velvet, em tons de vermelho, creme, marrom e laranja, sobre base de corte azul.">
+            <figcaption class="tag">07 · Cabelo</figcaption>
+          </figure>
+          <figure class="collage__item collage__item--b reveal">
+            <img src="../../assets/img/costura.jpg" width="1157" height="613" loading="lazy"
+                 alt="Máquina de costura com o calcador sobre a mesa de trabalho.">
+            <figcaption class="tag">03 · Costuras</figcaption>
+          </figure>
+          <figure class="collage__item collage__item--c reveal">
+            <img src="../../assets/img/pintura-rosto.jpg" width="602" height="340" loading="lazy"
+                 alt="Mãos pintando os olhos no rosto de tecido da boneca com caneta fina.">
+            <figcaption class="tag">06 · Pintura</figcaption>
+          </figure>
+          <div class="collage__item collage__item--d take reveal">
+            <video muted loop playsinline preload="none" data-src="../../assets/video/take-01.mp4" aria-label="Trecho de uma aula da Boneca Velvet acontecendo"></video>
+            <button class="take__toggle" type="button" aria-label="Pausar vídeo">
+              <svg class="take__icon take__icon--pause" aria-hidden="true"><use href="#i-pause"/></svg>
+              <svg class="take__icon take__icon--play" aria-hidden="true"><use href="#i-play"/></svg>
+            </button>
+            <span class="tag">Aula em andamento</span>
+          </div>
+          <figure class="collage__item collage__item--e reveal">
+            <img src="../../assets/img/detalhes-finais.jpg" width="1189" height="664" loading="lazy"
+                 alt="Mãos passando um cordão com pequenos botões de madrepérola.">
+            <figcaption class="tag">08 · Detalhes</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DUAS CÂMERAS -->
+    <section class="cameras section section--cream textured" aria-labelledby="cameras-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow">Duas perspectivas</p>
+          <h2 class="h2" id="cameras-title">Veja cada detalhe de perto</h2>
+          <p class="lead">A Boneca Velvet foi gravada em alta resolução e com duas perspectivas para aproximar você do processo de criação.</p>
+        </header>
+
+        <div class="cameras__grid">
+          <article class="cam reveal">
+            <div class="cam__frame">
+              <img src="../../assets/img/atelier.jpg" width="1265" height="745" loading="lazy"
+                   alt="Câmera frontal: Valeska Fraga de frente para a câmera, ao lado da Boneca Velvet.">
+              <span class="cam__rec" aria-hidden="true">CAM 1</span>
+              <span class="badge">Alta resolução</span>
+            </div>
+            <h3 class="cam__title">Frontal</h3>
+            <p>Acompanhe a condução da professora e a construção da peça.</p>
+          </article>
+          <article class="cam reveal">
+            <div class="cam__frame">
+              <img src="../../assets/img/corte.jpg" width="763" height="446" loading="lazy"
+                   alt="Câmera superior: vista de cima das mãos recortando o tecido sobre a base de corte.">
+              <span class="cam__rec" aria-hidden="true">CAM 2</span>
+              <span class="badge">Alta resolução</span>
+            </div>
+            <h3 class="cam__title">Visão superior</h3>
+            <p>Observe de perto as mãos, os materiais e cada etapa do trabalho.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section class="audience section" aria-labelledby="audience-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Para quem é</p>
+          <h2 class="h2" id="audience-title">Para quem quer criar além do projeto</h2>
+          <p class="lead">A Boneca Velvet foi criada para quem encontra no artesanato uma forma de expressão e quer transformar técnica em repertório.</p>
+        </header>
+
+        <div class="audience__grid">
+          <article class="profile reveal">
+            <svg class="profile__icon" aria-hidden="true"><use href="#i-needle"/></svg>
+            <h3 class="h3">Para quem está começando</h3>
+            <p>Uma experiência guiada para acompanhar a construção da peça por etapas.</p>
+          </article>
+          <article class="profile reveal">
+            <svg class="profile__icon" aria-hidden="true"><use href="#i-spool"/></svg>
+            <h3 class="h3">Para quem já é artesã</h3>
+            <p>Uma oportunidade de ampliar repertório e aperfeiçoar técnicas.</p>
+          </article>
+          <article class="profile reveal">
+            <svg class="profile__icon" aria-hidden="true"><use href="#i-button"/></svg>
+            <h3 class="h3">Para quem quer comercializar</h3>
+            <p>Um projeto que pode ser incorporado à sua própria produção artesanal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE VOCÊ LEVA -->
+    <section class="takeaways section section--cream textured" aria-labelledby="takeaways-title">
+      <div class="container takeaways__grid">
+        <header class="takeaways__head reveal">
+          <p class="eyebrow">Técnica e repertório</p>
+          <h2 class="h2" id="takeaways-title">Mais do que uma boneca</h2>
+          <svg class="takeaways__orn" aria-hidden="true"><use href="#i-flower"/></svg>
+        </header>
+        <ul class="takeaways__list">
+          <li class="reveal"><span class="takeaways__word">Uma peça</span><p>Você constrói a Boneca Velvet.</p></li>
+          <li class="reveal"><span class="takeaways__word">Uma técnica</span><p>Você acompanha diferentes etapas de construção.</p></li>
+          <li class="reveal"><span class="takeaways__word">Um repertório</span><p>Você amplia suas referências.</p></li>
+          <li class="reveal"><span class="takeaways__word">Uma possibilidade</span><p>Você pode levar o conhecimento para sua própria produção.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COMERCIALIZAÇÃO + CTA INTERMEDIÁRIO -->
+    <section class="sell section section--red textured" aria-labelledby="sell-title">
+      <svg class="orn orn--sell-1" aria-hidden="true"><use href="#i-button"/></svg>
+      <svg class="orn orn--sell-2" aria-hidden="true"><use href="#i-flower"/></svg>
+      <svg class="orn orn--sell-3" aria-hidden="true"><use href="#i-spool"/></svg>
+
+      <div class="container">
+        <div class="sell__grid">
+          <h2 class="sell__title reveal" id="sell-title">Crie para você.<br><em>Crie para vender.</em></h2>
+          <div class="sell__text reveal">
+            <p>Depois de aprender a construção da Boneca Velvet, você pode levar esse conhecimento para a sua própria produção.</p>
+            <p>Crie para você, para presentear, para encomendas ou para comercializar suas peças.</p>
+          </div>
+        </div>
+
+        <ol class="flow reveal" aria-label="Caminho">
+          <li>Aprenda</li>
+          <li>Construa</li>
+          <li>Desenvolva sua produção</li>
+        </ol>
+
+        <div class="midcta reveal">
+          <p class="midcta__q">Pronta para começar a sua Velvet?</p>
+          <div class="midcta__action">
+            <a class="btn btn--cream" href="#" data-link="checkout">
+              Começar o curso <svg class="btn__icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <span class="midcta__note">Acesso vitalício · 20% off com o cupom VELVET1</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACESSO VITALÍCIO -->
+    <section class="lifetime section section--cream" aria-labelledby="lifetime-title">
+      <div class="container lifetime__inner reveal">
+        <div class="seal" aria-hidden="true">
+          <svg class="seal__ring" viewBox="0 0 200 200">
+            <defs><path id="seal-path" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5"/>
+            <text><textPath href="#seal-path">ACESSO VITALÍCIO · O CURSO É SEU · TISSU STUDIO ·</textPath></text>
+          </svg>
+          <span class="seal__center">∞</span>
+        </div>
+        <div class="lifetime__text">
+          <h2 class="h2" id="lifetime-title">O curso é seu.</h2>
+          <h3 class="lifetime__sub">Acesso vitalício</h3>
+          <p>Volte às aulas sempre que quiser, reveja uma etapa e acompanhe novamente o processo enquanto desenvolve sua peça.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESPIRO EM VÍDEO -->
+    <section class="film take" aria-label="Trecho das aulas">
+      <video muted loop playsinline preload="none" data-src="../../assets/video/take-02.mp4" aria-label="Trecho de uma aula da Boneca Velvet acontecendo"></video>
+      <button class="take__toggle" type="button" aria-label="Pausar vídeo">
+        <svg class="take__icon take__icon--pause" aria-hidden="true"><use href="#i-pause"/></svg>
+        <svg class="take__icon take__icon--play" aria-hidden="true"><use href="#i-play"/></svg>
+      </button>
+      <p class="film__caption">Do tecido à personagem.</p>
+    </section>
+
+    <!-- SOBRE A PROFESSORA -->
+    <section class="teacher section section--red textured" id="professora" aria-labelledby="teacher-title">
+      <div class="container teacher__grid">
+        <figure class="teacher__media reveal">
+          <img src="../../assets/img/professora.jpg" width="724" height="896" loading="lazy"
+               alt="Valeska Fraga, de cabelos grisalhos e óculos rosados, segurando uma peça artesanal de tecido e renda, com o título “Quem é a professora”.">
+        </figure>
+        <div class="teacher__text reveal">
+          <h2 class="sr-only" id="teacher-title">Quem é a professora</h2>
+          <p class="eyebrow eyebrow--light">Quem é a professora</p>
+          <p class="teacher__name">Valeska <em>Fraga</em></p>
+          <p class="teacher__lead">Desde menina, Valeska Fraga vive, respira e sonha com artesanato.</p>
+          <p>A criatividade sempre esteve presente em sua trajetória, acompanhada pela vontade de transformar materiais simples em objetos carregados de significado, personalidade e beleza.</p>
+          <p>Autodidata por necessidade, buscou conhecimento e técnicas avançadas, encontrando nos Estados Unidos um importante espaço de aprendizado e aprofundamento.</p>
+          <p>Foi nesse caminho que seu olhar encontrou uma linguagem com a qual se identificou profundamente: o Country Primitivo.</p>
+          <p>Essa estética passou a influenciar suas criações e permanece presente em seu trabalho, especialmente nas bonecas de pano, que se tornaram uma de suas grandes paixões.</p>
+          <p>Hoje, Valeska compartilha esse repertório por meio do Tissu Studio, criando projetos que unem técnica, matéria, memória e identidade.</p>
+          <p class="teacher__sign">By Valeska Fraga</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto section section--teal textured" aria-label="Manifesto">
+      <div class="container">
+        <p class="manifesto__lines reveal">
+          <span>Do tecido à personagem.</span>
+          <span>Da técnica à criação.</span>
+          <span>Do projeto à sua própria linguagem.</span>
+        </p>
+        <p class="manifesto__sign reveal">Um projeto de assinatura Tissu Studio.</p>
+      </div>
+    </section>
+
+    <!-- COUNTRY PRIMITIVO -->
+    <section class="country section section--cream textured" aria-labelledby="country-title">
+      <div class="container country__grid">
+        <div class="country__text reveal">
+          <p class="eyebrow">Country Primitivo</p>
+          <h2 class="h2" id="country-title">Uma linguagem, muitas referências</h2>
+          <p class="lead">O Country Primitivo é uma das referências que atravessam o trabalho de Valeska.</p>
+          <p>A linguagem valoriza o feito à mão, os materiais, as texturas, os objetos com aparência de memória e a personalidade das peças.</p>
+          <p>No Tissu Studio, essa referência ganha uma interpretação própria.</p>
+          <p>Não se trata de reproduzir uma estética de maneira literal. Trata-se de utilizar esse repertório como ponto de partida para criar.</p>
+        </div>
+
+        <div class="country__collage reveal">
+          <span class="country__gingham gingham" aria-hidden="true"></span>
+          <figure class="country__photo">
+            <img src="../../assets/img/atelier.jpg" width="1265" height="745" loading="lazy"
+                 alt="Prateleiras do atelier com bonecas de pano no estilo Country Primitivo, livros e flores secas.">
+          </figure>
+          <div class="country__video take">
+            <video muted loop playsinline preload="none" data-src="../../assets/video/take-03.mp4" aria-label="Trecho de uma aula da Boneca Velvet acontecendo"></video>
+            <button class="take__toggle" type="button" aria-label="Pausar vídeo">
+              <svg class="take__icon take__icon--pause" aria-hidden="true"><use href="#i-pause"/></svg>
+              <svg class="take__icon take__icon--play" aria-hidden="true"><use href="#i-play"/></svg>
+            </button>
+          </div>
+          <span class="country__lace" aria-hidden="true"></span>
+          <svg class="country__orn country__orn--1" aria-hidden="true"><use href="#i-button"/></svg>
+          <svg class="country__orn country__orn--2" aria-hidden="true"><use href="#i-flower"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALORES -->
+    <section class="final section section--red textured" id="valores" aria-labelledby="final-title">
+      <svg class="orn orn--final-1" aria-hidden="true"><use href="#i-flower"/></svg>
+      <svg class="orn orn--final-2" aria-hidden="true"><use href="#i-button"/></svg>
+      <svg class="orn orn--final-3" aria-hidden="true"><use href="#i-scissors"/></svg>
+      <svg class="orn orn--final-4" aria-hidden="true"><use href="#i-spool"/></svg>
+      <svg class="orn orn--final-5" aria-hidden="true"><use href="#i-button"/></svg>
+
+      <div class="container final__inner reveal">
+        <img class="final__seal" src="../../assets/logo/selo-oval.png" width="420" height="473" alt="" loading="lazy">
+        <h2 class="final__title" id="final-title">Sua Velvet<br><em>começa aqui.</em></h2>
+        <p class="final__text">Do primeiro molde aos últimos detalhes, acompanhe a construção de uma peça autoral do Tissu Studio.</p>
+        <ul class="facts facts--center" aria-label="Sobre o curso">
+          <li>8 aulas</li>
+          <li>Alta resolução</li>
+          <li>2 perspectivas</li>
+          <li>Acesso vitalício</li>
+        </ul>
+        <div class="offer">
+          <p class="offer__label">Oferta de lançamento</p>
+          <p class="offer__price">
+            <s><span class="sr-only">De </span>R$ 197</s>
+            <strong><span class="sr-only">por </span>R$ 157,60</strong>
+          </p>
+          <p class="offer__hint">20% off aplicando o cupom no pagamento</p>
+          <button class="coupon" type="button" data-copy="VELVET1" aria-label="Copiar cupom VELVET1">
+            <span class="coupon__code">VELVET1</span><span class="coupon__action">Copiar cupom</span>
+          </button>
+        </div>
+        <a class="btn btn--cream btn--lg" href="#" data-link="checkout">
+          Começar agora <svg class="btn__icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- A PERSONALIDADE ESTÁ NOS DETALHES -->
+    <section class="details section section--wine textured" aria-labelledby="details-title">
+      <div class="container details__grid">
+        <div class="details__text">
+          <h2 class="details__title reveal" id="details-title">A personalidade<br><em>está nos detalhes.</em></h2>
+          <p class="details__intro reveal">Uma Boneca Velvet não é definida apenas pelo formato.</p>
+          <ul class="details__lines">
+            <li class="reveal">Ela está nos olhos.</li>
+            <li class="reveal">Nos cabelos.</li>
+            <li class="reveal">Na renda.</li>
+            <li class="reveal">Nos botões.</li>
+            <li class="reveal">Na fita.</li>
+            <li class="reveal">Nos pequenos objetos.</li>
+            <li class="reveal">Na combinação das cores.</li>
+            <li class="reveal">Na maneira como cada elemento encontra o outro.</li>
+          </ul>
+        </div>
+        <div class="details__mosaic">
+          <figure class="details__img details__img--a reveal">
+            <img src="../../assets/img/cabelo.jpg" width="1600" height="900" loading="lazy"
+                 alt="Rosto pintado da Boneca Velvet em close: olhos castanhos, bochechas rosadas e boca vermelha.">
+          </figure>
+          <figure class="details__img details__img--b reveal">
+            <img src="../../assets/img/montagem.jpg" width="1153" height="607" loading="lazy"
+                 alt="Close da blusa de laise da boneca enquanto a agulha prende um botão.">
+          </figure>
+          <figure class="details__img details__img--c reveal">
+            <img src="../../assets/img/roupa.jpg" width="1177" height="670" loading="lazy"
+                 alt="Close do laço xadrez e da alfineteira vermelha em forma de flor.">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE VOCÊ VAI APRENDER -->
+    <section class="steps-section section section--cream textured" aria-labelledby="steps-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">O que você vai aprender</p>
+          <h2 class="h2" id="steps-title">Do molde aos detalhes finais</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="reveal"><span class="steps__num">01</span><h3 class="steps__name">Molde</h3><p>A estrutura que orienta toda a construção.</p></li>
+          <li class="reveal"><span class="steps__num">02</span><h3 class="steps__name">Materiais</h3><p>Tudo preparado antes do primeiro ponto.</p></li>
+          <li class="reveal"><span class="steps__num">03</span><h3 class="steps__name">Costuras</h3><p>A peça começa a ganhar forma.</p></li>
+          <li class="reveal"><span class="steps__num">04</span><h3 class="steps__name">Corte</h3><p>O planejamento se transforma em matéria.</p></li>
+          <li class="reveal"><span class="steps__num">05</span><h3 class="steps__name">Enchimento</h3><p>Volume e estrutura para o corpo.</p></li>
+          <li class="reveal"><span class="steps__num">06</span><h3 class="steps__name">Pintura</h3><p>O rosto ganha expressão.</p></li>
+          <li class="reveal"><span class="steps__num">07</span><h3 class="steps__name">Cabelo</h3><p>Os fios que definem a personalidade.</p></li>
+          <li class="reveal"><span class="steps__num">08</span><h3 class="steps__name">Detalhes</h3><p>Os elementos que completam a peça.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- MOLDE -->
+    <section class="materials section section--tight" aria-labelledby="molde-title">
+      <div class="container">
+        <div class="materials__card gingham reveal">
+          <svg class="materials__orn materials__orn--1" aria-hidden="true"><use href="#i-scissors"/></svg>
+          <svg class="materials__orn materials__orn--2" aria-hidden="true"><use href="#i-spool"/></svg>
+          <div class="materials__body">
+            <p class="eyebrow">Material de apoio</p>
+            <h2 class="h2" id="molde-title">O molde da Velvet também é seu</h2>
+            <p class="lead">Você não acompanha apenas as aulas.</p>
+            <p>O projeto inclui acesso ao molde completo da Boneca Velvet, preparado para acompanhar a construção apresentada no curso.</p>
+            <p>Assim, você pode assistir às aulas, consultar o molde e retornar ao material sempre que precisar durante a execução.</p>
+            <p class="materials__close">Um projeto completo para aprender, construir e levar para a sua própria produção.</p>
+            <a class="btn btn--red" href="#" data-link="checkout">
+              Aprender agora <svg class="btn__icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE O TISSU STUDIO -->
+    <section class="studio section section--cream textured" aria-labelledby="studio-title">
+      <div class="container studio__grid">
+        <div class="studio__art reveal" aria-hidden="true">
+          <img class="studio__seal" src="../../assets/logo/selo-oval.png" width="420" height="473" alt="" loading="lazy">
+          <svg class="studio__orn studio__orn--1"><use href="#i-button"/></svg>
+          <svg class="studio__orn studio__orn--2"><use href="#i-spool"/></svg>
+          <svg class="studio__orn studio__orn--3"><use href="#i-flower"/></svg>
+          <svg class="studio__orn studio__orn--4"><use href="#i-scissors"/></svg>
+          <svg class="studio__orn studio__orn--5"><use href="#i-needle"/></svg>
+        </div>
+        <div class="studio__text reveal">
+          <p class="eyebrow">Sobre o Tissu Studio</p>
+          <h2 class="h2" id="studio-title">Um atelier em forma de marca</h2>
+          <p class="lead">O Tissu Studio reúne o universo criativo desenvolvido por Valeska Fraga em torno da costura criativa e das possibilidades do feito à mão.</p>
+          <p>A marca nasce do encontro entre técnica, repertório, materiais e paixão pelo artesanato.</p>
+          <p>Seus projetos exploram tecidos, fios, rendas, botões, flores, estampas e elementos que fazem parte do universo da criação artesanal.</p>
+          <p>Mais do que ensinar uma peça, o Studio compartilha processos e amplia possibilidades.</p>
+          <p class="studio__close">Cada projeto carrega uma linguagem própria.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="duvidas" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <header class="reveal">
+          <p class="eyebrow">Dúvidas</p>
+          <h2 class="h2" id="faq-title">Perguntas frequentes</h2>
+        </header>
+        <div class="faq__list reveal">
+          <details class="faq__item">
+            <summary>O acesso ao curso é vitalício?</summary>
+            <p>Sim. O acesso ao curso é vitalício.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Posso assistir às aulas novamente?</summary>
+            <p>Sim. O acesso permite retornar ao conteúdo e rever as etapas do projeto.</p>
+          </details>
+          <details class="faq__item">
+            <summary>O curso possui mais de uma câmera?</summary>
+            <p>Sim. As aulas foram gravadas com duas perspectivas: frontal e visão superior.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Posso produzir a Boneca Velvet para vender?</summary>
+            <p>O curso pode ser utilizado por artesãs que desejam produzir e comercializar suas peças físicas, respeitando os termos de uso do conteúdo e do projeto.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Preciso saber costurar?</summary>
+            <p>Não é necessário ser uma costureira experiente para acompanhar o projeto. As aulas apresentam a construção da Boneca Velvet por etapas, permitindo acompanhar o processo e desenvolver as técnicas ao longo da execução.</p>
+          </details>
+          <details class="faq__item">
+            <summary>O molde está incluído?</summary>
+            <p>Sim. O molde utilizado para a construção da Boneca Velvet faz parte dos materiais de apoio do projeto e pode ser utilizado para acompanhar as etapas apresentadas nas aulas.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Recebo certificado?</summary>
+            <p>O curso não possui certificado de conclusão. A proposta do Tissu Studio é oferecer uma experiência prática de criação, com foco no desenvolvimento de técnicas, repertório e construção da peça.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__phrase">Feito à mão, <em>pensado nos detalhes.</em></p>
+      <span class="stitch" aria-hidden="true"></span>
+
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <img src="../../assets/logo/logo-nominal-creme.png" width="520" height="150" alt="Tissu Studio by Valeska Fraga" loading="lazy">
+          <p>A técnica dá estrutura.<br>A criação dá identidade.</p>
+          <a class="social" href="https://www.instagram.com/tissustudio/" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>
+            @tissustudio<span class="sr-only"> no Instagram (abre em nova aba)</span>
+          </a>
+        </div>
+        <nav aria-label="Navegação do rodapé">
+          <p class="site-footer__label">Navegação</p>
+          <ul>
+            <li><a href="#curso">O curso</a></li>
+            <li><a href="#programa">Programa</a></li>
+            <li><a href="#professora">Professora</a></li>
+            <li><a href="#duvidas">Dúvidas</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Tissu Studio">
+          <p class="site-footer__label">Tissu Studio</p>
+          <ul>
+            <li><a href="../../index.html">Página inicial</a></li>
+            <li><a href="../../index.html#cursos">Todos os cursos</a></li>
+            <li><a href="https://wa.me/5521993231262" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://www.youtube.com/@tissustudio" target="_blank" rel="noopener">YouTube</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© <span data-year>2026</span> Tissu Studio · By Valeska Fraga</p>
+        <a href="#topo">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js" defer></script>
+</body>
+</html>

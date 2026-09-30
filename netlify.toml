@@ -1,2 +1,19 @@
 [build]
   publish = "."
+
+# /cursos leva para a lista de cursos da home
+[[redirects]]
+  from = "/cursos"
+  to = "/#cursos"
+  status = 301
+
+[[redirects]]
+  from = "/cursos/"
+  to = "/#cursos"
+  status = 301
+
+# link curto para bio/stories
+[[redirects]]
+  from = "/velvet"
+  to = "/cursos/boneca-velvet/"
+  status = 301

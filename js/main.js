@@ -1,14 +1,10 @@
 /* =========================================================
-   TISSU STUDIO — BONECA VELVET
+   TISSU STUDIO — comportamento compartilhado (home + cursos)
    ========================================================= */
 
-/* Links oficiais: preencha aqui e todos os botões do site são atualizados.
-   Enquanto estiver "#", o botão permanece na página. */
+/* Links de compra: troque aqui e todos os botões com data-link são atualizados. */
 const LINKS = {
-  checkout: 'https://pay.hotmart.com/N107819938V?off=3g3c3yni&bid=179080069516', // página de compra (Hotmart)
-  suporte: '#',
-  termos: '#',
-  privacidade: '#'
+  checkout: 'https://pay.hotmart.com/N107819938V?off=3g3c3yni&bid=179080069516' // Boneca Velvet (Hotmart)
 };
 
 document.documentElement.classList.add('js');
