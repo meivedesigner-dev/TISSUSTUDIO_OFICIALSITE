@@ -25,6 +25,12 @@
 }
 .hero__title--manifesto em { display: inline; padding: 0; font-weight: 300; }
 .hero__actions--row { flex-direction: row; flex-wrap: wrap; gap: 14px; }
+/* O vídeo não tem o tratamento vermelho da foto: sombra suave só atrás do texto */
+.hero--home::before {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(60, 22, 24, .55) 0%, rgba(60, 22, 24, .25) 28%, transparent 48%);
+}
+.hero--home .hero__toggle { z-index: 3; }
 
 /* Cursos */
 .hub__hint { font-family: var(--ff-display); font-style: italic; font-size: 1.2rem; color: var(--tissu-red-dark); margin-top: 14px; }
@@ -141,6 +147,7 @@
   .site-nav__social a { font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; color: var(--tissu-red); }
 
   .hero--home .hero__text, .hero--home .hero__actions { max-width: none; }
+  .hero--home::before { display: none; }
   .hero__title--manifesto { font-size: clamp(2.2rem, 9vw, 3.2rem); }
   .hero__actions--row { flex-direction: column; align-items: stretch; }
   .hero__actions--row .btn { width: 100%; }

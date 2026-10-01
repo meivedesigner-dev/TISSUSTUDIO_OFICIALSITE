@@ -15,7 +15,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/img/hero.jpg">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/home.css">
 </head>
@@ -106,8 +105,14 @@
 
     <!-- HERO / MANIFESTO -->
     <section class="hero hero--home" aria-labelledby="hero-title">
-      <img class="hero__bg" src="assets/img/hero.jpg" width="1600" height="895"
-           alt="Valeska Fraga em seu atelier no Tissu Studio, ao lado da Boneca Velvet.">
+      <video class="hero__bg hero__video" autoplay muted loop playsinline preload="auto"
+             poster="assets/img/hero.jpg" aria-label="Valeska Fraga em seu atelier no Tissu Studio">
+        <source src="assets/video/home-intro.mp4" type="video/mp4">
+      </video>
+      <button class="take__toggle hero__toggle" type="button" aria-label="Pausar vídeo">
+        <svg class="take__icon take__icon--pause" aria-hidden="true"><use href="#i-pause"/></svg>
+        <svg class="take__icon take__icon--play" aria-hidden="true"><use href="#i-play"/></svg>
+      </button>
 
       <div class="hero__inner container">
         <div class="hero__text">
@@ -240,6 +245,49 @@
           <p class="teacher__sign">By Valeska Fraga</p>
         </div>
       </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials section section--cream textured" id="depoimentos" aria-labelledby="dep-title">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">Depoimentos</p>
+            <h2 class="h2" id="dep-title">Quem já esteve no atelier</h2>
+          </div>
+          <div class="testimonials__aside">
+            <p class="section-head__aside">Palavras de alunas e de quem acompanha o Tissu Studio nos cursos, nas aulas presenciais e no YouTube.</p>
+            <div class="carousel__controls">
+              <button class="carousel__btn" type="button" data-carousel-prev aria-label="Depoimentos anteriores">
+                <svg aria-hidden="true" style="transform: scaleX(-1)"><use href="#i-arrow"/></svg>
+              </button>
+              <button class="carousel__btn" type="button" data-carousel-next aria-label="Próximos depoimentos">
+                <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <ul class="carousel__track reveal" data-carousel tabindex="0" aria-label="Depoimentos — role para o lado para ver mais">
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-01.jpg" width="593" height="746" loading="lazy" alt="Depoimento de Regina Koury, aluna presencial e do curso on-line O Natal Country Primitivo: “Ahhh, fazer bonecas com você foi uma das melhores épocas da minha vida.”"></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-02.jpg" width="425" height="523" loading="lazy" alt="Depoimento de Estela Chaliban, cinco estrelas: “As aulas são muito bem explicadas, passo a passo. Projetos com muito valor agregado. Eu amo!”"></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-03.jpg" width="593" height="745" loading="lazy" alt="Depoimento de Sandra Laner, de Porto Alegre: “Querida amiga, tu és uma artista perfeita! Te admiro muito, pelo conhecimento e pela generosidade em dividir conosco tantas técnicas lindas!”"></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-04.jpg" width="597" height="743" loading="lazy" alt="Comentário no YouTube: “Querida, você tem mãos abençoadas! Aprendi muitas dicas e consegui fazer o meu tão sonhado duende.”"></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-05.jpg" width="597" height="749" loading="lazy" alt="Depoimento de Regina Garcia, aluna do curso Coração Ano Inteiro: “Acabei de assistir à última aula. Ficou lindo! Parabéns!”"></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-06.jpg" width="540" height="703" loading="lazy" alt="Depoimento de Angela Marinho, cinco estrelas: “As aulas são extremamente bem explicadas, feitas com muito carinho e cuidado, o que traz muita segurança na hora de produzir.”"></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-07.jpg" width="598" height="745" loading="lazy" alt="Depoimento de Thete Pereira, de Niterói, aluna presencial, elogiando o ensinamento de Valeska e as aulas na Hotmart."></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-08.jpg" width="595" height="744" loading="lazy" alt="Comentário no YouTube: “A melhor aula de gnomo que eu achei. Seu trabalho é primoroso, acabamento perfeito e um resultado impecável.”"></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-09.jpg" width="594" height="749" loading="lazy" alt="Depoimentos sobre a aula do Duende Charmoso, publicada no canal do YouTube do Tissu Studio."></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-10.jpg" width="458" height="549" loading="lazy" alt="Depoimento de Vera Maria Fonseca: “Valeskinha! Acabei de assistir a aula. Como sempre adorei. Para mim é um lugar de aprendizado com muito conteúdo e relaxamento.”"></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-11.jpg" width="598" height="745" loading="lazy" alt="Comentário no YouTube: “Que lindo trabalho! Muito obrigado por compartilhar seu conhecimento. Saudações e gratidão do México.”"></button></li>
+        <li class="carousel__item"><button class="carousel__card" type="button" aria-label="Ampliar depoimento"><img src="assets/img/depoimentos/depoimento-12.jpg" width="593" height="743" loading="lazy" alt="Comentários no YouTube, em português e espanhol, elogiando a aula detalhista de Valeska."></button></li>
+      </ul>
+
+      <dialog class="lightbox" aria-label="Depoimento ampliado">
+        <button class="lightbox__close" type="button" aria-label="Fechar">×</button>
+        <img class="lightbox__img" src="" alt="">
+      </dialog>
     </section>
 
     <!-- CRIAÇÃO / MANIFESTO -->
