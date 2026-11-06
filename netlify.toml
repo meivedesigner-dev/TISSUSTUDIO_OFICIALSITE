@@ -17,3 +17,8 @@
   from = "/velvet"
   to = "/cursos/boneca-velvet/"
   status = 301
+
+[[redirects]]
+  from = "/sagrada"
+  to = "/cursos/sagrada-familia/"
+  status = 301

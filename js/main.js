@@ -4,7 +4,8 @@
 
 /* Links de compra: troque aqui e todos os botões com data-link são atualizados. */
 const LINKS = {
-  checkout: 'https://pay.hotmart.com/N107819938V?off=3g3c3yni&bid=179080069516' // Boneca Velvet (Hotmart)
+  checkout: 'https://pay.hotmart.com/N107819938V?off=3g3c3yni&bid=179080069516', // Boneca Velvet (Hotmart)
+  sagrada: 'https://pay.hotmart.com/X108365563O' // Workshop Sagrada Família (Hotmart)
 };
 
 document.documentElement.classList.add('js');
