@@ -45,7 +45,6 @@
   .hero--sagrada::before { display: none; }
   .hero--sagrada .hero__bg { aspect-ratio: 16 / 10; object-position: center; }
   .hero--sagrada .hero__title { font-size: clamp(3.4rem, 15vw, 5.2rem); }
-  .hero--sagrada .hero__toggle { display: none; }
 }
 @media (max-width: 640px) {
   .characters__grid, .lessons--modules { grid-template-columns: 1fr; }

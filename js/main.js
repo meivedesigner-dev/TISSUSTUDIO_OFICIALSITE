@@ -120,17 +120,39 @@ document.querySelectorAll('.take').forEach((wrap) => {
 const heroVideo = document.querySelector('.hero__video');
 const heroToggle = document.querySelector('.hero__toggle');
 if (heroVideo) {
+  // Páginas com imagem animada no celular: o vídeo só carrega no computador
+  const desktopSrc = heroVideo.dataset.desktopSrc;
+  if (desktopSrc && window.matchMedia('(min-width: 901px)').matches) heroVideo.src = desktopSrc;
+
   const syncHero = () => {
     if (!heroToggle) return;
     heroToggle.classList.toggle('is-paused', heroVideo.paused);
     heroToggle.setAttribute('aria-label', heroVideo.paused ? 'Reproduzir vídeo' : 'Pausar vídeo');
   };
+  let heroPausedByUser = reduceMotion; // quem prefere menos movimento começa com o vídeo parado
+  const playHero = () => {
+    if (!heroPausedByUser && heroVideo.paused) heroVideo.play().catch(() => {});
+  };
   if (reduceMotion) heroVideo.pause();
+  heroVideo.muted = true; // celulares só tocam sozinhos vídeos sem som
   heroVideo.addEventListener('play', syncHero);
   heroVideo.addEventListener('pause', syncHero);
   heroToggle?.addEventListener('click', () => {
+    heroPausedByUser = !heroVideo.paused;
     if (heroVideo.paused) heroVideo.play().catch(() => {});
     else heroVideo.pause();
+  });
+
+  // Celulares podem segurar o autoplay: tenta de novo quando o vídeo carrega,
+  // quando a página volta a aparecer e no primeiro toque na tela.
+  playHero();
+  heroVideo.addEventListener('canplay', playHero);
+  window.addEventListener('pageshow', playHero);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) playHero(); });
+  document.addEventListener('touchstart', playHero, { once: true, passive: true });
+  heroVideo.addEventListener('click', () => {
+    heroPausedByUser = false;
+    playHero();
   });
   syncHero();
 }

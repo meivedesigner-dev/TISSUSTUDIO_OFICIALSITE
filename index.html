@@ -105,10 +105,11 @@
 
     <!-- HERO / MANIFESTO -->
     <section class="hero hero--home" aria-labelledby="hero-title">
-      <video class="hero__bg hero__video" autoplay muted loop playsinline preload="auto"
+      <video class="hero__bg hero__video" autoplay muted loop playsinline preload="auto" data-desktop-src="assets/video/home-intro.mp4"
              poster="assets/img/hero.jpg" aria-label="Valeska Fraga em seu atelier no Tissu Studio">
-        <source src="assets/video/home-intro.mp4" type="video/mp4">
       </video>
+      <img class="hero__bg hero__anim" src="assets/img/home-hero-mobile.webp" width="800" height="450" loading="lazy" style="background-image: url('assets/img/hero.jpg')"
+           alt="Valeska Fraga em seu atelier no Tissu Studio">
       <button class="take__toggle hero__toggle" type="button" aria-label="Pausar vídeo">
         <svg class="take__icon take__icon--pause" aria-hidden="true"><use href="#i-pause"/></svg>
         <svg class="take__icon take__icon--play" aria-hidden="true"><use href="#i-play"/></svg>

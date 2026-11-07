@@ -910,3 +910,11 @@ p + p { margin-top: 14px; }
   .carousel__item { flex-basis: 78vw; }
   .lightbox__close { top: 8px; right: 8px; }
 }
+
+/* Hero no celular: imagem animada no lugar do vídeo, que alguns aparelhos
+   bloqueiam (ex.: modo de economia de bateria) */
+.hero__anim { display: none; }
+@media (max-width: 900px) {
+  .hero__video[data-desktop-src], .hero__video[data-desktop-src] ~ .hero__toggle { display: none; }
+  .hero__anim { display: block; width: 100%; background: var(--tissu-brown) center / cover no-repeat; }
+}
