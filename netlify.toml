@@ -22,3 +22,13 @@
   from = "/sagrada"
   to = "/cursos/sagrada-familia/"
   status = 301
+
+# Cabeçalhos de segurança
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "frame-ancestors 'self'; upgrade-insecure-requests"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
